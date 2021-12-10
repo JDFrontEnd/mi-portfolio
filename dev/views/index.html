@@ -44,14 +44,22 @@
         <!-- inicio portada -->
         <section class="section cover">
             <header class="cover__header">
-                <p class="cover__hello">hola,</p>
-                <h1 class="cover__title">soy juan diego mesa lopez</h1>
+                <h1 class="cover__title">
+                    <span class="cover__hello">hola,</span>
+                    <br>
+                    <span class="cover__name"> 
+                        soy juan diego mesa lopez
+                    </span>
+                    <br>
+                    <span class="cover-desc__fev">
+                        frontend developer
+                    </span>
+                    <br>
+                    <span class="cover-desc__ci">creativo
+                        <span class="cover-desc__line">|</span>innovador
+                    </span>
+                </h1>
             </header>
-            <div class="cover-desc">
-                <p class="cover-desc__fev">frontend developer</p>
-                <p class="cover-desc__ci">creativo<span class="cover-desc__line">|</span>innovador
-                </p>
-            </div>
             <div class="buttons button--contactame">
                 <a href="#" class="button__link button__link--contactame">contactame</a>
             </div>
@@ -74,17 +82,19 @@
 
         <div class="separator"></div>
 
+        <aside></aside>
+
         <!-- inicio sobre mi -->
         <section class="section about">
+            <header class="about__header">
+                <h2 class="about__title">sobre mi</h2>
+            </header>
             <article class="about-card">
                 <header class="about-card__header">
-                    <h2 class="about-card__title">sobre mi</h2>
-                </header>
-                <div class="about-card__body">
-                    <p class="about-card__qsh">¿Qué servicios hago?</p>
+                    <h3 class="about-card__title">¿Qué servicios hago?</h3>
                     <p class="about-card__tit">desarrollo wed</p>
-                    <p class="about-card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odit tempore possimus cumque fugiat facere asperiores quasi consectetur at temporibus consequatur, quo alias voluptatum nisi tempora voluptatem deleniti doloremque natus?</p>
-                </div>
+                </header>
+                <p class="about-card__desc">Lorem ipsum dolor sit amet      consectetur adipisicing elit. Vitae odit tempore possimus   cumque fugiat facere asperiores quasi consectetur at temporibus consequatur, quo alias voluptatum nisi tempora voluptatem deleniti doloremque natus?</p>
             </article>
         </section>
         <!-- fin sobre mi -->
@@ -132,10 +142,21 @@
 
         <!-- inicio portafolio -->
         <section class="section pportfolio">
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
-            <div><img src="" alt=""></div>
+            <header>
+                <h2>portafolio</h2>
+            </header>
+            <div>
+                <img src="/public/assets/img/undraw_portfolio_website_lidw.svg" alt="hola">
+            </div>
+            <div>
+                <img src="/public/assets/img/undraw_programming_re_kg9v.svg" alt="j">
+            </div>
+            <div>
+                <img src="/public/assets/img/undraw_contact_us_-15-o2.svg" alt="hg">
+            </div>
+            <div>
+                <img src="/public/assets/img/undraw_developer_activity_re_39tg.svg" alt="yg">
+            </div>
         </section>
         <!-- fin portafolio -->
 
@@ -143,21 +164,24 @@
 
         <!-- inicio contacto -->
         <section class="section contact">
+            <header>
+                <h2>contacto</h2>
+            </header>
             <div>
-                <img src="" alt="">
+                <img src="/public/assets/img/undraw_portfolio_website_lidw.svg" alt="ggt">
             </div>
             <div>
-                <form action="">
-                    <label for="">
-                        text
+                <form>
+                    <label >
+                        nombre
                         <input type="text">
                     </label>
-                    <label for="">
-                        text
-                        <input type="text">
+                    <label>
+                        email
+                        <input type="email">
                     </label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <input type="submit" value="">
+                    <textarea name="message" id="massage" cols="30" rows="10"></textarea>
+                    <input type="submit">
                 </form>
             </div>
         </section>
