@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'ThinItalic';
+    src: url(/public/assets/fonts/Montserrat/Montserrat-ThinItalic.ttf);
+}
+
+@font-face {
+    font-family: 'Italic';
+    src: url(/public/assets/fonts/Montserrat/Montserrat-Italic.ttf);
+}
+
+@font-face {
+    font-family: 'Light';
+    src: url(/public/assets/fonts/Montserrat/Montserrat-Light.ttf);
+}
+
+@font-face {
+    font-family: 'Thin';
+    src: url(/public/assets/fonts/Montserrat/Montserrat-Thin.ttf);
+}

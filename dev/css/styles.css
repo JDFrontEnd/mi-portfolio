@@ -10,7 +10,9 @@
 Colores
 Fuentes
 Reseteos que se aplican a menudo en distintos elementos, como listas o inversión de colores en el caso de tener distintos temas de color */
-@import "/dev/css/config/config.css";
+@import "/dev/css/config/config.css ";
+@import "/dev/css/config/_colors.css";
+@import "/dev/css/config/_fonts.css";
 
 
 /* mixins */

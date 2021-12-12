@@ -1,13 +1,27 @@
 body {
     background: black;
     color: whitesmoke;
-    font-family: 'juan';
-    font-size: 1.2rem;
+    font-family: 'Light';
 }
 
 a {
     text-decoration: none;
     color: whitesmoke;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: capitalize;
+    color: var(--primary-color);
+    font-family: 'ThinItalic';
+}
+
+li {
+    display: inline-block;
 }
 
 ul {
@@ -16,7 +30,3 @@ ul {
     padding-left: 0;
     list-style: none;
 } 
-
-li {
-    display: inline-block;
-}
