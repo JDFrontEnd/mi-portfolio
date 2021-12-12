@@ -1,12 +1,26 @@
 body {
-    background: black;
+    margin: 0;
+    background: linear-gradient(to right, var(--bg-color), var(--bg-color2));
     color: whitesmoke;
-    font-family: 'Light';
+    font-family: 'Medium';
+    font-size: 1.2rem;
 }
 
 a {
     text-decoration: none;
     color: whitesmoke;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2.5rem;
 }
 
 h1,
@@ -17,7 +31,7 @@ h5,
 h6 {
     text-transform: capitalize;
     color: var(--primary-color);
-    font-family: 'ThinItalic';
+    font-family: 'Light';
 }
 
 li {
