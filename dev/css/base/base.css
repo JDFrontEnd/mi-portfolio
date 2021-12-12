@@ -1,0 +1,20 @@
+body {
+    background: black;
+    color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+} 
+
+li {
+    display: inline-block;
+}

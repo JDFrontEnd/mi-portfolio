@@ -3,7 +3,7 @@
 
 
 /* Estilos a las etiquetas base de nuestro sitio web, body, a, etc. */
-@import "/dev/";
+@import "/dev/css/base/base.css";
 
 /* Elementos de configuración
   
@@ -21,3 +21,4 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 
 /* Estilos de los elementos que se repitirán en el sitio web */
 @import "blocks/buttons";
+
