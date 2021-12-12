@@ -14,13 +14,8 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 @import "/dev/css/config/_colors.css";
 @import "/dev/css/config/_fonts.css";
 
-
-/* mixins */
-@import "mixins/mixins";
-
-/* Estilos de ayuda que se utilizan a menudo como ocultar un elemento, quitar el scroll, etc. */
-@import "helpers/helpers";
-
 /* Estilos de los elementos que se repitirán en el sitio web */
 @import "blocks/buttons";
+@import "/dev/css/blocks/section.css";
+@import "/dev/css/blocks/separator.css"
 
