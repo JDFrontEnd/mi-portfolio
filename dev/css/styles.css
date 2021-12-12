@@ -17,5 +17,132 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 /* Estilos de los elementos que se repitirán en el sitio web */
 @import "blocks/buttons";
 @import "/dev/css/blocks/section.css";
-@import "/dev/css/blocks/separator.css"
+@import "/dev/css/blocks/separator.css";
+@import "/dev/css/blocks/flexbox.css";
+
+
+
+
+
+
+/* 
+
+///////// inicio header \\\\\\\\\\
+
+*/
+.main-header {
+    justify-content: space-evenly;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background: linear-gradient(to right, var(--bg-color), var(--bg-color2));
+    z-index: 100;
+}
+
+.logo 
+
+.logo__link
+
+.logo__img
+
+.menu-container
+
+.navbar
+
+.navbar__items
+
+.navbar__link
+
+/* 
+///////// fin header \\\\\\\\\\
+
+*/
+
+
+
+/* 
+
+///////// inicio main \\\\\\\\\\
+
+*/
+
+.main
+
+
+/* 
+
+///////// inicio cover \\\\\\\\\\
+
+*/
+
+.cover 
+
+.cover__title
+
+.cover__hello
+
+.cover__name
+
+.cover__fev
+
+.cover-desc__ci
+
+.cover-desc__line
+
+.cover--contact
+
+.buttons__link--contact
+
+.social--cover
+
+.nav-social--cover
+
+.nav-social__items--cover
+
+.nav-social__link--cover
+
+/* 
+
+///////// fin cover \\\\\\\\\\
+
+*/
+
+
+
+
+/* 
+
+///////// inicio about \\\\\\\\\\
+
+*/
+
+.about 
+
+.about__title
+
+.about-card
+
+.about-card__header
+
+.about-card__title
+
+.about-card__tit
+
+.about-card__desc
+
+/* 
+
+///////// fin about \\\\\\\\\\
+
+*/
+
+
+
+
+
+
+
+
+
+
 
