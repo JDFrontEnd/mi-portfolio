@@ -5,13 +5,13 @@
 /* Estilos a las etiquetas base de nuestro sitio web, body, a, etc. */
 @import "/dev/css/base/base.css";
 
-/* Elementos de configuración
-  
+
+/* Elementos de configuración  
 Colores
-
 Fuentes
-
 Reseteos que se aplican a menudo en distintos elementos, como listas o inversión de colores en el caso de tener distintos temas de color */
+@import "/dev/css/config/config.css";
+
 
 /* mixins */
 @import "mixins/mixins";
