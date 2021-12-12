@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-    <meta name ="description" content = "Este es un portfolio wed.">
+    <meta property="og:description" content="El sitio wed JUAN FRONTEND es un portafolio wed creado con el proposito de mostrar las habilidades y conocimientos de juan diego mesa lopez como desarrollador front-end.">
+
+    <meta name="description" content="El sitio wed JUAN FRONTEND es un portafolio wed creado con el proposito de mostrar las habilidades y conocimientos de juan diego mesa lopez como desarrollador front-end.">
+
+    <meta name="author" content="Juan Diego Mesa Lopez">
 
     <meta name="keywords" content="portfolio, portfolio wed, wed, desarrollo wed, front-end,frontend developer, html5, css3, javascript">
 
@@ -28,7 +32,7 @@
     <header class="manin-header">
         <!-- logo -->
         <div class="logo">
-            <a href="/dev\views\index.html" class="logo__link">JUAN FRONTEND</a>
+            <a href="/dev/views/index.html" class="logo__link">JUAN FRONTEND</a>
         </div>
         <!-- nav -->
         <nav class="menu-container">
@@ -176,25 +180,34 @@
             </div>
             <div>
                 <form method="post">
-                    <div>
-                        <label for="name" >nombre:</label>
+
+                    <fieldset>
+                        <legend>
+                            contacto
+                        </legend>
+                        <div>
+                            <label for="name" >nombre:</label>
+                            <br>
+                            <input 
+                            id="name" type="text" 
+                            placeholder="lionel andres messi puchetini" name="name">
+                        </div>
                         <br>
-                        <input id="name" type="text">
-                    </div>
-                    <br>
-                    <div>
-                        <label for="email">email:</label>
+                        <div>
+                            <label for="email">email:</label>
+                            <br>
+                            <input 
+                            id="email" type="email" placeholder="example@gmail.com" name="email">
+                        </div>       
                         <br>
-                        <input id="email" type="email">
-                    </div>       
-                    <br>
-                    <div>
-                        <textarea name="message" id="massage" cols="30" rows="10"></textarea>
-                    </div>    
-                    <br>
-                    <div>
-                        <input type="submit">
-                    </div>
+                        <div>
+                            <textarea name="message" id="massage" cols="30" rows="10" placeholder="mensaje"></textarea>
+                        </div>    
+                        <br>
+                        <div>
+                            <input type="submit">
+                        </div>
+                    </fieldset>
                 </form>
             </div>
         </section>
