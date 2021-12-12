@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Montserrat';
-    src: url();
+    font-family: "Montserrat";
+    src: url(/public/assets/fonts/Montserrat/Montserrat-ExtraLightItalic.ttf);
 }
 
 :root {
