@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background: linear-gradient(to right, var(--bg-color), var(--bg-color2));
+    background-color:  var(--bg-color);
     color: whitesmoke;
     font-family: 'Medium';
     font-size: 1.2rem;
@@ -12,16 +12,11 @@ a {
 }
 
 h1 {
-    font-size: 3.5rem;
+    margin: 0;
+    line-height: 65px;
+    text-align: center;
 }
 
-h2 {
-    font-size: 3rem;
-}
-
-h3 {
-    font-size: 2.5rem;
-}
 
 h1,
 h2,
@@ -36,7 +31,7 @@ h6 {
 
 li {
     display: inline-block;
-    padding: 10px;
+    padding: .5em;
 }
 
 ul {
@@ -45,8 +40,3 @@ ul {
     padding-left: 0;
     list-style: none;
 } 
-
-
-img {
-    width: 100px;
-}

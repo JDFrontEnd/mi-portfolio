@@ -15,10 +15,8 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 @import "/dev/css/config/_fonts.css";
 
 /* Estilos de los elementos que se repitirán en el sitio web */
-@import "blocks/buttons";
-@import "/dev/css/blocks/section.css";
-@import "/dev/css/blocks/separator.css";
-@import "/dev/css/blocks/flexbox.css";
+@import "/dev/css/blocks/blocks.css";
+@import "/dev/css/blocks/loop.css";
 
 
 
@@ -33,25 +31,22 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 .main-header {
     justify-content: space-evenly;
     width: 100%;
+    padding: .5em;
     position: sticky;
     top: 0;
-    background: linear-gradient(to right, var(--bg-color), var(--bg-color2));
+    background: var(--bg-color);
     z-index: 100;
 }
 
-.logo 
+.logo__link {
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
 
-.logo__link
-
-.logo__img
-
-.menu-container
-
-.navbar
-
-.navbar__items
-
-.navbar__link
+.logo__img {
+    width: 10%;
+}
 
 /* 
 ///////// fin header \\\\\\\\\\
@@ -60,14 +55,6 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 
 
 
-/* 
-
-///////// inicio main \\\\\\\\\\
-
-*/
-
-.main
-
 
 /* 
 
@@ -75,31 +62,73 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 
 */
 
-.cover 
+.cover {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
 
-.cover__title
+.cover__title {
+    grid-column: 2 / 3;
+    grid-row: 1;
+}
 
-.cover__hello
+.button__link--contact {
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
 
-.cover__name
+.cover--contact {
+    grid-column: 2 / 3;
+    grid-row: 3;
+}
 
-.cover__fev
+.figure {
+    grid-column: 1 / 2;
+    grid-row: 1/4;
+    margin: 0;
+    background-color: var(--primary-color);
+}
 
-.cover-desc__ci
 
-.cover-desc__line
+.cover__hello {
+    font-size: 1.5rem;
+}
 
-.cover--contact
+.cover__name {
+    display: inline-block;
+    padding: .1em;
+    margin: .1em;
+    font-size: 2.5rem;
+    color: whitesmoke;
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+}
 
-.buttons__link--contact
+.cover__fev {
+    font-size: 2rem;
+}
 
+.cover-desc__ci {
+    color: whitesmoke;
+    font-size: 2rem;
+}
+
+.cover-desc__line {
+    color: var(--primary-color);
+}
+
+.button__link--contact {
+    margin: auto;
+}
+
+/* 
 .social--cover
 
 .nav-social--cover
 
 .nav-social__items--cover
 
-.nav-social__link--cover
+.nav-social__link--cover */
 
 /* 
 
@@ -116,19 +145,56 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 
 */
 
-.about 
+.about {
+    flex-direction: column;
+    align-items: center;
+}
 
-.about__title
+.about__title {
+    margin: 1em 0 0 0;
+    padding: 1em;
+}
 
-.about-card
+.about-card {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    max-width: 70%;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0px 0px 40px 4px rgba(0, 0, 0, 0.9);
+}
 
-.about-card__header
+.about-card__header {
+    grid-column: 1 / 2;
+    grid-row: 1 ;
+    padding: 1em;
+}
 
-.about-card__title
+.about-card__title {
+    margin: 2em 0 0 0;
+} 
 
-.about-card__tit
+.about-card__tit {
+    margin: 1em 0 0 0 ;
+}
 
-.about-card__desc
+
+.about-card__desc {
+    grid-column: 1 / 2;
+    grid-row: 2;
+    padding: 1em;
+    margin: 0;
+}
+
+.about-card__img {
+    max-width: 500px;
+    height: 100%;
+    grid-column: 2 / 3;
+    grid-row: 1/3;
+}
+
 
 /* 
 
@@ -138,11 +204,40 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 
 
 
+/* 
+
+/////// inicio skill \\\\\\\\\
+
+*/
 
 
+.skill {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: repeat(3, 1fr);
+}
 
+.skill__title {
+    grid-column: 1 / 3;
+    grid-row: 1/2;
+    margin: 2.5em 0 0 0;
+    text-align: center;
+}
 
+.skill-card--dwed {
+    grid-column: 1 / 2;
+    grid-row: 2/ 3;
+}
 
+.skill-card--rsocial {
+    grid-column: 2 / 3;
+    grip-row: 2/ 3;
+}
 
+.button__link--cv {
+    grid-column: 1 / 3;
+    grip-row: 3/4;
+    margin: auto auto 2.5em auto;
+}
 
 

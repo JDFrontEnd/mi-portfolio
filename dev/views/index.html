@@ -14,7 +14,10 @@
     <meta name="keywords" content="portfolio, portfolio wed, wed, desarrollo wed, front-end,frontend developer, html5, css3, javascript">
 
     <title>Juan FrontEnd | PortFolio</title>
-    
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/98a5bcad5e.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="/dev/css/styles.css">
 
 </head>
@@ -34,19 +37,19 @@
         <nav class="menu-container">
             <ul class="navbar">
                 <li class="navbar__items">
-                    <a class="navbar__link" href="#">INICIO</a>
+                    <a class="navbar__link" href="/dev/views/index.html">INICIO</a>
                 </li>
                 <li class="navbar__items">
-                    <a class="navbar__link" href="#">SOBRE MI</a>
+                    <a class="navbar__link" href="#about">SOBRE MI</a>
                 </li>
                 <li class="navbar__items">
-                    <a class="navbar__link" href="#">HABILIDADES</a>
+                    <a class="navbar__link" href="#skill">HABILIDADES</a>
                 </li>
                 <li class="navbar__items">
-                    <a class="navbar__link" href="#">PORTAFOLIO</a>
+                    <a class="navbar__link" href="#portfolio">PORTAFOLIO</a>
                 </li>
                 <li class="navbar__items">
-                    <a class="navbar__link" href="#">CONTACTO</a>
+                    <a class="navbar__link" href="#contact">CONTACTO</a>
                 </li>
             </ul>
         </nav>
@@ -56,7 +59,7 @@
     <!-- inicio main -->
     <main class="main">
         <!-- inicio portada -->
-        <section class="section cover">
+        <section class="section cover" id="cover">
             <h1 class="cover__title">
                 <span class="cover__hello">hola,</span>
                 <br>
@@ -68,24 +71,33 @@
                     frontend developer
                 </span>
                 <br>
-                <span class="cover-desc__ci">creativo
-                    <span class="cover-desc__line">|</span>innovador
+                <span class="cover-desc__ci">creativo <span class="cover-desc__line"> | </span> innovador
                 </span>
             </h1>
-            <div class="buttons button--contact">
-                <a href="#" class="button__link button__link--contact">contactame</a>
-            </div>
+            
+            <a href="#contact" class="button__link button__link--contact">contactame</a>
+
+            <figure class="figure">
+                <img class="cover__img" src="/public/assets/img/undraw_programming_re_kg9v.svg" alt="image">
+            </figure>
+
             <!-- social -->
             <nav class="social social--cover">
                 <ul class="nav-social nav-social--cover">
                     <li class="nav-social__items nav-social__items--cover">
-                        <a href="" class="nav-social__link nav-social__link--cover"></a>
+                        <a href="" class="nav-social__link nav-social__link--cover">
+                            <i class="nav-social__icon fab fa-facebook-square"></i>
+                        </a>
                     </li>
                     <li class="nav-social__items nav-social__items--cover">
-                        <a href="" class="nav-social__link nav-social__link--cover"></a>
+                        <a href="" class="nav-social__link nav-social__link--cover">
+                            <i class="nav-social__icon fab fa-instagram-square"></i>
+                        </a>
                     </li>
                     <li class="nav-social__items nav-social__items--cover">
-                        <a href="" class="nav-social__link nav-social__link--cover"></a>
+                        <a href="" class="nav-social__link nav-social__link--cover">
+                            <i class="nav-social__icon fab fa-linkedin"></i>
+                        </a>
                     </li>
                 </ul>
             </nav>
@@ -97,7 +109,7 @@
         <aside></aside>
 
         <!-- inicio sobre mi -->
-        <section class="section about">
+        <section class="section about" id="about">
             <h2 class="about__title">sobre mi</h2>
             <article class="about-card">
                 <header class="about-card__header">
@@ -105,6 +117,7 @@
                     <p class="about-card__tit">desarrollo wed</p>
                 </header>
                 <p class="about-card__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae odit tempore possimus cumque fugiat facere asperiores quasi consectetur at temporibus consequatur, quo alias voluptatum nisi tempora voluptatem deleniti doloremque natus?</p>
+                <img class="about-card__img" src="/public/assets/img/undraw_profile_re_4a55.svg" alt="">
             </article>
         </section>
         <!-- fin sobre mi -->
@@ -112,9 +125,9 @@
         <div class="separator"></div>
 
         <!-- inicio habilidades -->
-        <section class="section skill">
+        <section class="section skill" id="skill">
             <h2 class="skill__title">Conocimientos técnicos y habilidades</h2>
-            <article class="skill-card">
+            <article class="skill-card skill-card--dwed">
                 <header class="skil-card__header">
                     <h3 class="skill-card__title">desarrollo wed</h3>
                 </header>
@@ -127,7 +140,7 @@
                     <li class="skill-card__items">Control de versiones: Git/GitHub</li>
                 </ul>
             </article>
-            <article class="skill-card">
+            <article class="skill-card skill-card--rsocial">
                 <header class="skil-card__header">
                     <h3 class="skill-card__title">redes sociales</h3>
                 </header>
@@ -138,9 +151,7 @@
                     <li class="skill-card__items">linkedin</li>
                 </ul>
             </article>
-            <div class="buttons button--cv">
-                <a download href="/public/assets/FOV/public/assets/img/undraw_contact_us_-15-o2.svg" class="button__link button__link--cv">descargar-cv</a>
-            </div>
+            <a download href="/public/assets/FOV/public/assets/img/undraw_contact_us_-15-o2.svg" class="button__link button__link--cv">descargar-cv</a>
 
         </section>
 
@@ -149,7 +160,7 @@
         <div class="separator"></div>
 
         <!-- inicio portafolio -->
-        <section class="section pportfolio">
+        <section class="section portfolio" id="portfolio">
             <h2>portafolio</h2>
             <div>
                 <img src="/public/assets/img/undraw_portfolio_website_lidw.svg" alt="hola">
@@ -169,7 +180,7 @@
         <div class="separator"></div>
 
         <!-- inicio contacto -->
-        <section class="section contact">
+        <section class="section contact" id="contact">
             <h2>contacto</h2>
             <div>
                 <img src="/public/assets/img/undraw_portfolio_website_lidw.svg" alt="ggt">
