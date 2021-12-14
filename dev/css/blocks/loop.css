@@ -1,3 +1,5 @@
+.cover,
+.cover-left,
 .about,
 .portfolio,
 .contact,
@@ -7,14 +9,13 @@
     display: flex;
 }
 
-.about-card,
-.cover {
+.about-card {
     display: grid;
 }
 
-.figure,
-.cover__img {
-    width: 100%;
+.cover-left,
+.figure {
+    width: 50%;
     height: 100%;
 }
 
@@ -23,3 +24,12 @@
 .about {
     padding: 1em;
 }
+
+/* .about,
+.skill,
+.portfolio,
+.contact,
+.footer,
+.separator {
+    background-color: var(--bg-color);
+} */

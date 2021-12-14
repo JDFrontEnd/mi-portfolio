@@ -55,7 +55,6 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 
 
 
-
 /* 
 
 ///////// inicio cover \\\\\\\\\\
@@ -63,65 +62,43 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 */
 
 .cover {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, auto);
+    flex-direction: row-reverse;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
 }
 
-.cover__title {
-    grid-column: 2 / 3;
-    grid-row: 1;
+.cover-left {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 40px;
+    padding: 1.5em;
 }
 
-.button__link--contact {
-    grid-column: 2 / 3;
-    grid-row: 2;
+/* .cover-left__header  */
+
+
+.cover-left__title {
+    text-align: left;
 }
 
-.cover--contact {
-    grid-column: 2 / 3;
-    grid-row: 3;
-}
-
-.figure {
-    grid-column: 1 / 2;
-    grid-row: 1/4;
+.cover-cardleft__desc {
     margin: 0;
-    background-color: var(--primary-color);
 }
 
-
-.cover__hello {
-    font-size: 1.5rem;
-}
-
-.cover__name {
-    display: inline-block;
-    padding: .1em;
-    margin: .1em;
-    font-size: 2.5rem;
-    color: whitesmoke;
-    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(20px);
-}
-
-.cover__fev {
-    font-size: 2rem;
-}
-
-.cover-desc__ci {
-    color: whitesmoke;
-    font-size: 2rem;
-}
-
-.cover-desc__line {
-    color: var(--primary-color);
-}
-
-.button__link--contact {
-    margin: auto;
+.cover-left__link {
+    text-decoration: underline;
+    color: var(--deco-color);
+    font-size: 1rem;
 }
 
 /* 
+.button__link--contact 
+
+.cover--contact 
+
 .social--cover
 
 .nav-social--cover
@@ -129,6 +106,14 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 .nav-social__items--cover
 
 .nav-social__link--cover */
+
+
+.figure {
+    margin: 0;
+    background-color: var(--primary-color);
+}
+
+
 
 /* 
 
@@ -147,12 +132,15 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 
 .about {
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
+    padding: 3em;
+    background-color: var(--bg-color);
+    z-index: 90;
 }
 
 .about__title {
-    margin: 1em 0 0 0;
-    padding: 1em;
+    margin: 1em 0 1em 0;
 }
 
 .about-card {
@@ -160,10 +148,9 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
     grid-template-rows: repeat(2, auto);
     max-width: 70%;
     height: 500px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 3px solid rgba(255, 255, 255, 0.1);
+    background-color: var(--primary-color);
+    box-shadow: 0 0 40px 5px black;
     border-radius: 20px;
-    box-shadow: 0px 0px 40px 4px rgba(0, 0, 0, 0.9);
 }
 
 .about-card__header {
@@ -173,11 +160,15 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 }
 
 .about-card__title {
+    font-size: 2rem;
     margin: 2em 0 0 0;
+    color: var(--bg-color);
 } 
 
 .about-card__tit {
     margin: 1em 0 0 0 ;
+    font-size: 2rem;
+    color: var(--bg-color);
 }
 
 
@@ -185,7 +176,9 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
     grid-column: 1 / 2;
     grid-row: 2;
     padding: 1em;
-    margin: 0;
+    margin: 0 0 2em 0;
+    font-size: 1.3rem;
+    color: var(--bg-color);
 }
 
 .about-card__img {
@@ -215,12 +208,15 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: repeat(3, 1fr);
+    padding: 4em 0;
+    background-color: var(--bg-color);
+    z-index: 80;
 }
 
 .skill__title {
     grid-column: 1 / 3;
     grid-row: 1/2;
-    margin: 2.5em 0 0 0;
+    margin: 2em 0;
     text-align: center;
 }
 
@@ -231,13 +227,13 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 
 .skill-card--rsocial {
     grid-column: 2 / 3;
-    grip-row: 2/ 3;
+    grid-row: 2/ 3;
 }
 
 .button__link--cv {
     grid-column: 1 / 3;
-    grip-row: 3/4;
-    margin: auto auto 2.5em auto;
+    grid-row: 3/4;
+    margin: 3em auto;
 }
 
 
