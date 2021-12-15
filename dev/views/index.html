@@ -154,17 +154,17 @@
         <!-- inicio portafolio -->
         <section class="section portfolio" id="portfolio">
             <h2>portafolio</h2>
-            <div>
-                <img src="/public/assets/img/undraw_portfolio_website_lidw.svg" alt="hola">
+            <div class="portafolio__content">
+                <img class="portfolio__img" src="/public/assets/img/undraw_portfolio_website_lidw.svg" alt="hola">
             </div>
-            <div>
-                <img src="/public/assets/img/undraw_programming_re_kg9v.svg" alt="j">
+            <div class="portafolio__content">
+                <img class="portfolio__img" src="/public/assets/img/undraw_programming_re_kg9v.svg" alt="j">
             </div>
-            <div>
-                <img src="/public/assets/img/undraw_contact_us_-15-o2.svg" alt="hg">
+            <div class="portafolio__content">
+                <img class="portfolio__img" src="/public/assets/img/undraw_contact_us_-15-o2.svg" alt="hg">
             </div>
-            <div>
-                <img src="/public/assets/img/undraw_developer_activity_re_39tg.svg" alt="yg">
+            <div class="portafolio__content">
+                <img class="portfolio__img" src="/public/assets/img/undraw_developer_activity_re_39tg.svg" alt="yg">
             </div>
         </section>
         <!-- fin portafolio -->
@@ -172,33 +172,33 @@
 
         <!-- inicio contacto -->
         <section class="section contact" id="contact">
-            <h2>contacto</h2>
-            <div>
-                <img src="/public/assets/img/undraw_portfolio_website_lidw.svg" alt="ggt">
+            <h2 class="contact__title">contacto</h2>
+            <div class="img__container">
+                <img class="contact__img" src="/public/assets/img/undraw_portfolio_website_lidw.svg" alt="ggt">
             </div>
-            <div>
-                <form method="post">
+            <div class="form-container">
+                <form class="form" id="form" method="post">
 
-                    <fieldset>
-                        <legend>
+                    <fieldset class="fieldset">
+                        <legend class="legend">
                             contacto
                         </legend>
-                        <div>
-                            <label for="name" >nombre:</label>
+                        <div class="name">
+                            <label class="labelname" for="name" >nombre:</label>
                             <br>
                             <input 
                             id="name" type="text" 
                             placeholder="lionel andres messi puchetini" name="name">
                         </div>
                         <br>
-                        <div>
-                            <label for="email">email:</label>
+                        <div class="email">
+                            <label class="labelemail" for="email">email:</label>
                             <br>
                             <input 
                             id="email" type="email" placeholder="example@gmail.com" name="email">
                         </div>       
                         <br>
-                        <div>
+                        <div class="message">
                             <textarea name="message" id="massage" cols="30" rows="10" placeholder="mensaje"></textarea>
                         </div>    
                         <br>
@@ -221,15 +221,13 @@
               Créditos de la web</p>
         </div>
 
-        <article class="contact">
-            <header>
-              <h3 class="footer-title primary-color">Contacto</h3>
-            </header>
+        <div class="contact__footer">
+            <h3 class="footer-title primary-color">Contacto</h3>
             <div class="contact-container">
                 <a href="mailto:juandyyy@hotmail.com">juandyyy@hotmail.com</a>
                 <a href="tel:+533216948090">+53 321 694 80 90</a>
             </div>
-          </article>
+          </a>
         
     </footer>
     <!-- fin footer -->

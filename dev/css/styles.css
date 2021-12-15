@@ -207,7 +207,7 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 .skill {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: repeat(3, 1fr);
+    grid-auto-rows: repeat(4, 1fr);
     padding: 4em 0;
     background-color: var(--bg-color);
     z-index: 80;
@@ -221,19 +221,94 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 }
 
 .skill-card--dwed {
-    grid-column: 1 / 2;
+    grid-column: 1 / 3;
     grid-row: 2/ 3;
+    margin-bottom: 1em;
 }
 
 .skill-card--rsocial {
-    grid-column: 2 / 3;
-    grid-row: 2/ 3;
+    grid-column: 1 / 3;
+    grid-row: 3/ 4;
 }
 
 .button__link--cv {
     grid-column: 1 / 3;
-    grid-row: 3/4;
+    grid-row: 4/5;
     margin: 3em auto;
 }
+
+
+/* 
+
+///////// inicio portfolio \\\\\
+
+*/
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--bg-color);
+}
+
+.portafolio__content {
+    margin: .5em;
+}
+
+.portfolio__img {
+    width: 500px;
+}
+
+/* 
+
+//////// fin portfolio \\\\\\\\\
+
+*/
+
+
+
+/* 
+
+//////// inicio contact \\\\\\\\\
+
+*/
+
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    padding: 2em;
+    background-color: teal;
+}
+
+.contact__title {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    text-align: center;
+}
+
+.img__container {
+    grid-column: 1 / 2;
+    grid-row: 2;
+}
+
+.contact__img {
+    width: 350px;
+}
+
+.form-container {
+    grid-column: 2 / 3;
+    grid-row: 2;
+}
+
+.form {
+    
+}
+
+
+
+
+
 
 
