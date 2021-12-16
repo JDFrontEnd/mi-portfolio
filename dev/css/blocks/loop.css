@@ -1,8 +1,8 @@
-.cover,
-.cover-left,
-.about,
-.portfolio,
-.contact,
+.section--cover,
+.cover-right,
+.section--about,
+.section--portfolio,
+.section--contact,
 .main-header,
 .logo__link,
 .footer {
@@ -13,7 +13,7 @@
     display: grid;
 }
 
-.cover-left,
+.cover-right,
 .figure {
     width: 50%;
     height: 100%;
@@ -21,7 +21,7 @@
 
 .logo,
 .menu-container,
-.about {
+.section--about {
     padding: 1em;
 }
 

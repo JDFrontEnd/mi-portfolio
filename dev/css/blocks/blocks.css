@@ -21,6 +21,7 @@
 */
 
 .section {
+    position: relative;
     width: 100%;
 }
 

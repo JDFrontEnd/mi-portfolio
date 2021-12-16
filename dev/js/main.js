@@ -46,6 +46,13 @@ for (i = 0; i < 10; i++) {
     console.log(i);
 }
 
+let p = 0;
+
+do {
+    console.log(p);
+    p++;
+} while (p<10);
+
 
 
 

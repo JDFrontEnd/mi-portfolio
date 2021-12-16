@@ -19,10 +19,6 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 @import "/dev/css/blocks/loop.css";
 
 
-
-
-
-
 /* 
 
 ///////// inicio header \\\\\\\\\\
@@ -53,23 +49,20 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 
 */
 
-
-
 /* 
 
 ///////// inicio cover \\\\\\\\\\
 
 */
 
-.cover {
+.section--cover {
     flex-direction: row-reverse;
     position: sticky;
     top: 0;
     height: 100vh;
-    z-index: -1;
 }
 
-.cover-left {
+.cover-right {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -77,24 +70,21 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
     padding: 1.5em;
 }
 
-/* .cover-left__header  */
-
-
-.cover-left__title {
+.cover-right__title {
     text-align: left;
 }
 
-.cover-cardleft__desc {
+.cover-right__desc {
     margin: 0;
 }
 
-.cover-left__link {
+.cover-right__link {
     text-decoration: underline;
     color: var(--deco-color);
     font-size: 1rem;
 }
 
-/* 
+/*
 .button__link--contact 
 
 .cover--contact 
@@ -115,6 +105,7 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 
 
 
+
 /* 
 
 ///////// fin cover \\\\\\\\\\
@@ -130,13 +121,13 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 
 */
 
-.about {
+.section--about {
+    position: relative;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     padding: 3em;
     background-color: var(--bg-color);
-    z-index: 90;
 }
 
 .about__title {
@@ -204,13 +195,12 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 */
 
 
-.skill {
+.section--skill {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: repeat(4, 1fr);
     padding: 4em 0;
     background-color: var(--bg-color);
-    z-index: 80;
 }
 
 .skill__title {
@@ -244,11 +234,10 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 
 */
 
-.portfolio {
+.section--portfolio {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     background-color: var(--bg-color);
 }
 
@@ -274,7 +263,7 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 
 */
 
-.contact {
+.section--contact {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
