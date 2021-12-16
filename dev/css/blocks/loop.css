@@ -9,10 +9,6 @@
     display: flex;
 }
 
-.about-card {
-    display: grid;
-}
-
 .cover-right,
 .figure {
     width: 50%;

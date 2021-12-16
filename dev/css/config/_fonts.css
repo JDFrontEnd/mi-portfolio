@@ -1,24 +1,9 @@
 @font-face {
-    font-family: 'ThinItalic';
-    src: url(/public/assets/fonts/Montserrat/Montserrat-ThinItalic.ttf);
+    font-family: 'Salma';
+    src: url(/public/assets/fonts/salma-alfasans/SalmaAlfasans-Light.otf);
+}
+@font-face {
+    font-family: 'SalmaItalic';
+    src: url(/public/assets/fonts/salma-alfasans/SalmaAlfasans-LightItalic.otf);
 }
 
-@font-face {
-    font-family: 'Light';
-    src: url(/public/assets/fonts/Montserrat/Montserrat-Light.ttf);
-}
-
-@font-face {
-    font-family: 'Bold';
-    src: url(/public/assets/fonts/Montserrat/Montserrat-Bold.ttf);
-}
-
-@font-face {
-    font-family: 'BoldItalic';
-    src: url(/public/assets/fonts/Montserrat/Montserrat-BoldItalic.ttf);
-}
-
-@font-face {
-    font-family: 'Medium';
-    src: url(/public/assets/fonts/Montserrat/Montserrat-Medium.ttf);
-}

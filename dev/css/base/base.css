@@ -1,10 +1,13 @@
 body {
+    position: relative;
+    min-height: 100vh;
     margin: 0;
     background-color:  var(--bg-color);
+    font-family: sans-serif;
     color: whitesmoke;
-    font-family: 'Medium';
     font-size: 1.2rem;
 }
+
 
 a {
     text-decoration: none;
@@ -30,7 +33,6 @@ h5,
 h6 {
     text-transform: capitalize;
     color: var(--primary-color);
-    font-family: 'Light';
 }
 
 li {
@@ -44,3 +46,8 @@ ul {
     padding-left: 0;
     list-style: none;
 } 
+
+
+img {
+    max-width: 100%;
+}

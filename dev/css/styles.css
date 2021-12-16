@@ -19,6 +19,12 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 @import "/dev/css/blocks/loop.css";
 
 
+
+:root {
+    --transition: sticky 2s ease-in-out;
+}
+
+
 /* 
 
 ///////// inicio header \\\\\\\\\\
@@ -60,37 +66,51 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
     position: sticky;
     top: 0;
     height: 100vh;
+    transition: var(--transition);
 }
 
 .cover-right {
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    row-gap: 40px;
     padding: 1.5em;
 }
 
-.cover-right__title {
+.cover__header {
+    padding: .5em 1em;
+}
+
+.cover__title {
     text-align: left;
 }
 
-.cover-right__desc {
+.cover__body {
+    padding: 0 1em;
+}
+
+.cover__desc {
     margin: 0;
 }
 
-.cover-right__link {
+.cover__link {
     text-decoration: underline;
     color: var(--deco-color);
     font-size: 1rem;
 }
 
+.cover-button__container {
+    padding: 2em 0;
+}
+
 /*
-.button__link--contact 
+.button__link--contact  */
 
-.cover--contact 
 
-.social--cover
+.social--cover {
+    padding: 1em;
+}
 
+
+/*
 .nav-social--cover
 
 .nav-social__items--cover
@@ -135,6 +155,7 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 }
 
 .about-card {
+    display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
     max-width: 70%;
@@ -289,6 +310,16 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 .form-container {
     grid-column: 2 / 3;
     grid-row: 2;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    padding: 1em;
+    background-color: var(--bg-color);
 }
 
 
