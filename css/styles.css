@@ -1,28 +1,72 @@
-/* Reseteo de los estilos por defecto del navegador */
-@import "/dev/css/base/normalize.css";
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 3em;
+    background-color:  var(--bg-color);
+    font-family: sans-serif;
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
 
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
 
-/* Estilos a las etiquetas base de nuestro sitio web, body, a, etc. */
-@import "/dev/css/base/base.css";
+li {
+    display: inline-block;
+    padding: .5em;
+}
 
-
-/* Elementos de configuración  
-Colores
-Fuentes
-Reseteos que se aplican a menudo en distintos elementos, como listas o inversión de colores en el caso de tener distintos temas de color */
-@import "/dev/css/config/config.css ";
-@import "/dev/css/config/_colors.css";
-@import "/dev/css/config/_fonts.css";
-
-/* Estilos de los elementos que se repitirán en el sitio web */
-@import "/dev/css/blocks/blocks.css";
-@import "/dev/css/blocks/loop.css";
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+} 
 
 
 
 :root {
-    --transition: sticky 2s ease-in-out;
+    --bg-color: #1b1b1b;
+    --deco-color: #8EFA7D;
+    --primary-color: #3DDE02;
 }
+
+
+
+
+/* 
+
+////// loop ///////
+
+*/
+
+.section--cover,
+.cover-right,
+.section--about,
+.section--portfolio,
+.section--contact,
+.main-header,
+.logo__link,
+.footer {
+    display: flex;
+}
+
+.cover-right,
+.figure {
+    width: 50%;
+    height: 100%;
+}
+
+.logo,
+.menu-container,
+.section--about {
+    padding: 1em;
+}
+
+
 
 
 /* 
@@ -31,6 +75,7 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 
 */
 .main-header {
+    flex-direction: row;
     justify-content: space-evenly;
     width: 100%;
     padding: .5em;
@@ -54,6 +99,13 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 ///////// fin header \\\\\\\\\\
 
 */
+
+
+.main {
+    display: grid;
+}
+
+
 
 /* 
 
@@ -313,20 +365,17 @@ Reseteos que se aplican a menudo en distintos elementos, como listas o inversió
 }
 
 
+
+
+
+
+
+
 .footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     height: 200px;
+    margin-top: auto;
     padding: 1em;
     background-color: var(--bg-color);
 }
-
-
-
-
-
-
-
-
 
