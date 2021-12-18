@@ -1,0 +1,70 @@
+/* 
+
+///////// inicio cover \\\\\\\\\\
+
+*/
+.section--cover {
+    flex-direction: row-reverse;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    transition: var(--transition);
+}
+
+.cover-right {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5em;
+}
+
+.cover__header {
+    padding: .5em 1em;
+}
+
+.cover__title {
+    text-align: left;
+}
+
+.cover__body {
+    padding: 0 1em;
+}
+
+.cover__desc {
+    margin: 0;
+}
+
+.cover__link {
+    text-decoration: underline;
+    color: var(--deco-color);
+    font-size: 1rem;
+}
+
+.cover-button__container {
+    padding: 2em 0;
+}
+
+/* .button__link--contact  */
+
+
+.social--cover {
+    padding: 1em;
+}
+
+
+/*
+.nav-social--cover
+
+.nav-social__items--cover
+
+.nav-social__link--cover */
+
+
+.figure {
+    margin: 0;
+    background-color: var(--primary-color);
+}
+/* 
+
+///////// fin cover \\\\\\\\\\
+
+*/

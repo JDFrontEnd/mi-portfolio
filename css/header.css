@@ -1,0 +1,47 @@
+/* 
+
+///////// inicio header \\\\\\\\\\
+
+*/
+.main-header {
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: .5em;
+    position: sticky;
+    top: 0;
+    background: var(--bg-color);
+    z-index: 100;
+}
+
+/* .logo */
+
+.logo__link {
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.logo__img {
+    width: 10%;
+}
+
+/* 
+
+.menu-container
+
+.navbar
+
+.navbar__items
+
+.navbar__link
+
+
+*/
+
+
+
+/* 
+///////// fin header \\\\\\\\\\
+
+*/
