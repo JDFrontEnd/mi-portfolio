@@ -17,29 +17,29 @@
     padding: 1.5em;
 }
 
-.cover__header {
+.cover-right__header {
     padding: .5em 1em;
 }
 
-.cover__title {
+.cover-right__title {
     text-align: left;
 }
 
-.cover__body {
+.cover-right__body {
     padding: 0 1em;
 }
 
-.cover__desc {
+.cover-right__desc {
     margin: 0;
 }
 
-.cover__link {
+.cover-right__link {
     text-decoration: underline;
     color: var(--deco-color);
     font-size: 1rem;
 }
 
-.cover-button__container {
+.button-container {
     padding: 2em 0;
 }
 

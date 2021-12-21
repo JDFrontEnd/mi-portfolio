@@ -6,7 +6,6 @@
 .main-header {
     flex-direction: row;
     justify-content: space-evenly;
-    width: 100%;
     padding: .5em;
     position: sticky;
     top: 0;
@@ -38,6 +37,7 @@
 
 
 */
+
 
 
 

@@ -1,8 +1,13 @@
+@import "/css/blocks.css";
+
 @import "/css/header.css";
 
 @import "/css/cover.css";
 
 @import "/css/footer.css";
+
+@import "/css/responsive.css";
+
 
 
 body {
@@ -56,95 +61,9 @@ ul {
 
 
 
-/* 
-
-////// loop ///////
-
-*/
-
-.section--cover,
-.cover-right,
-.section--about,
-.section--portfolio,
-.section--contact,
-.main-header,
-.logo__link,
-.footer {
-    display: flex;
-}
-
-.cover-right,
-.figure {
-    width: 50%;
-    height: 100%;
-}
-
-.logo,
-.menu-container,
-.section--about {
-    padding: 1em;
-}
 
 
-/* 
 
-//////////  buttons ///////////
-
-*/
-
-.button__link {
-    padding: .8em 1.4em;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 3px solid var(--primary-color);
-    border-radius: 40px;
-    box-shadow: 0 0 20px rgb(61, 222, 2, 0.3);
-    color: var(--primary-color);
-}
-
-/* 
-
-///////// section //////////////
-
-*/
-
-.section {
-    position: relative;
-    width: 100%;
-}
-
-/* 
-
-///////// social ////////////
-
-*/
-
-.nav-social__icon {
-    font-size: 2rem;
-}
-
-
-/* 
-
-//////////// skill card /////////////
-
-*/
-
-.skill-card {
-    padding-left: 1.5em;
-}
-
-/* skil-card__header
-
-skill-card__title */
-
-.skill-card__list {
-    list-style-type: circle;
-    padding-left: .5em;
-}
-
-.skill-card__items {
-    display: block;
-}
 
 
 
