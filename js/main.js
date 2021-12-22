@@ -91,11 +91,20 @@ else console.log(`${num4} es impar`);
 
 */
 
-
-
 let numeros = [1,2,3,4];
 
+let palabras = ['hola', 'avion', 'arbol'];
+
+console.log(numeros.length);
+
+console.log(Array.isArray(palabras));
+
 console.log(numeros);
+numeros.shift();
+console.log(numeros);
+numeros.pop();
+console.log(numeros);
+
 
 
 

@@ -10,7 +10,6 @@
 .section--portfolio,
 .section--contact,
 .main-header,
-.logo__link,
 .footer {
     display: flex;
 }
@@ -19,12 +18,6 @@
 .figure {
     width: 50%;
     height: 100%;
-}
-
-.logo,
-.menu-container,
-.section--about {
-    padding: 1em;
 }
 
 

@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-bottom: 3em;
+    background-color:  var(--bg-color);
+    font-family: sans-serif;
+    color: whitesmoke;
+    font-size: 1.2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+li {
+    display: inline-block;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+} 

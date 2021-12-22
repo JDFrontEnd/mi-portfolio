@@ -18,8 +18,6 @@
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/98a5bcad5e.js" crossorigin="anonymous"></script>
 
-
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 
 </head>
@@ -30,14 +28,16 @@
     <header class="main-header">
         <!-- logo -->
         <div class="logo">
-            <a class="logo__link" href="index.html">
-                <img class="logo__img" src="assets/logo/jfe.png" alt="">
-                JUAN FRONTEND
-            </a>
+            <a class="logo__link" href="index.html">JUAN FRONTEND</a>
         </div>
+
+        <div id="bars" class="top-bar">
+            <i class="top-bar__icon fas fa-bars"></i>
+        </div>
+
         <!-- nav -->
         <nav class="menu-container">
-            <ul class="navbar">
+            <ul class="navbar" id="main-menu">
                 <li class="navbar__items">
                     <a class="navbar__link" href="index.html">INICIO</a>
                 </li>
@@ -74,7 +74,7 @@
                         <a href="#contact" class="button__link button__link--contact">contactame</a>
                     </div>
                 </div>
-                 <!-- social -->
+                <!-- social -->
                 <nav class="social social--cover">
                     <ul class="nav-social nav-social--cover">
                         <li class="nav-social__items nav-social__items--cover">
