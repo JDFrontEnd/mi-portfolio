@@ -14,7 +14,7 @@
 
 /* ///////// inicio header \\\\\\\\\\ */
 
-.main-header {
+/* .main-header {
     flex-direction: row;
     justify-content: space-evenly;
     top: 0;
@@ -28,15 +28,11 @@
 
 .logo__link {
     font-size: 1.5rem;
-}
+} */
 
 
 
 /* ///////// fin header \\\\\\\\\\ */
-
-
-
-
 
 
 
@@ -134,7 +130,7 @@
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(2, auto);
-    max-width: 70%;
+    width: 70%;
     height: 500px;
     background-color: var(--primary-color);
     box-shadow: 0 0 40px 5px black;
@@ -270,6 +266,11 @@
 .form-container {
     grid-column: 2 / 3;
     grid-row: 2;
+    padding: 0;
+}
+
+.fieldset {
+    padding: 0;
 }
 /* ////////// fin contact \\\\\\\\\\ */
 
@@ -285,68 +286,71 @@
 
 
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 760px) {
     img {
+        position: absolute;
         width: 100%;
+        height: 100%;
+        opacity: .2;
     }
 
     /* header */
     .main-header {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-content: flex-end;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(2, auto);
         width: 100%;
     }
 
     .logo {
-        padding: 1.5em;
-    }
-
-    .logo__link {
-        font-size: 1.1rem;
-    }
-
-    .top-bar {
-        position: relative;
-        display: block;
+        grid-column: 1 / 2;
+        grid-row: 1;
         padding: 1em;
     }
 
+    .logo__link {
+        font-size: 1.2rem;
+    }
+
+    .top-bar {
+       grid-column: 2/3;
+       grid-row: 1;
+       padding: 0.9em;
+       text-align: right;
+    }
+
     .top-bar__icon {
-        font-size: 2.5rem;
+        font-size: 2rem;
         color: var(--primary-color);
     }
 
     .menu-container {
         position: absolute;
-        top: 80px;
+        top: 67px;
+        grid-column: 1 / 3;
+        grid-row: 2;
+        height: 100vh;
         width: 100%;
         background-color: var(--bg-color);
-        transform: translateX(-360px);
+        transform: translateX(750px);
+        transition: transform .3s;
+        z-index: 50;
     }
 
-    .navbar {
-        padding: 2em 0;
-    } 
+    .menu-show  {
+        transform: translateX(0px);
+    }
 
     .navbar__items {
         display: block;
         padding: 1em;
-        width: 100%;
         text-align: right;
     }
 
 
 
 
-
     /* cover */
-    .section--cover {
-        flex-direction: column;
-        position: relative;
-        height: 100vh;
-    }
     
     .cover-right {
         flex-direction: column;
@@ -375,64 +379,68 @@
         padding: 3em 0;
     }
     
-    
-    .social--cover {
-        padding: 0;
-    }
-    
     .figure {
         display: flex;
-        align-items: center;
+        justify-content: center;
         position: absolute;
-        margin: 0;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.1);
-        opacity: 0.1;
-    }
-
-    .cover__img {
-        position: absolute;
+        height: 100%;
+        background-color: transparent;
     }
 
 
+
+    /* about */
 
     .section--about {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-        margin: 0;
+        row-gap: 20px;
         padding: 0;
-        background-color: var(--bg-color);
+    }
+
+    .section--about,
+    .about-card__header,
+    .about-card__desc {
+        padding: 0;
+    }
+
+    .about-card__title,
+    .about-card__tit,
+    .about-card__desc {
+        margin: 0;
+        color: whitesmoke;
+        font-size: 1.3rem;
     }
     
     .about__title {
-        margin: 0;
+        padding: .5em;
+        font-size: 1.9rem;
     }
     
     .about-card {
         display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        padding: .5em;
         background-color: transparent;
+        box-shadow: none;
     }
     
-    /* .about-card__header {
-     
-    } */
-    
     .about-card__title {
-        color: var(--bg-color);
+        padding: .3em;
     } 
     
     .about-card__tit {
-        color: var(--bg-color);
+        padding: .2em;
+    } 
+    
+    .about-card__img {
+
+    } 
+    
+    .section--portfolio {
+        height: 100vh;
     }
-    
-    
-    .about-card__desc {
-        color: var(--bg-color);
-    }
-    
-    /* .about-card__img {
-    } */
     
 }
