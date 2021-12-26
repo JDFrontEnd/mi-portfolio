@@ -325,20 +325,23 @@
     }
 
     .menu-container {
-        position: absolute;
-        top: 67px;
         grid-column: 1 / 3;
         grid-row: 2;
+        z-index: 50;
+    }
+    
+    .navbar {
+        position: absolute;
+        top: 67px;
         height: 100vh;
         width: 100%;
         background-color: var(--bg-color);
         transform: translateX(750px);
         transition: transform .3s;
-        z-index: 50;
     }
 
     .menu-show  {
-        transform: translateX(0px);
+        transform: translateX(0);
     }
 
     .navbar__items {
@@ -386,6 +389,7 @@
         width: 100%;
         height: 100%;
         background-color: transparent;
+        z-index: -10;
     }
 
 
