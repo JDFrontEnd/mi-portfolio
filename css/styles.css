@@ -14,7 +14,7 @@
 
 /* ///////// inicio header \\\\\\\\\\ */
 
-/* .main-header {
+.main-header {
     flex-direction: row;
     justify-content: space-evenly;
     top: 0;
@@ -28,7 +28,7 @@
 
 .logo__link {
     font-size: 1.5rem;
-} */
+}
 
 
 
