@@ -31,6 +31,13 @@
 }
 
 
+/* .menu-container  */
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
 
 /* ///////// fin header \\\\\\\\\\ */
 
