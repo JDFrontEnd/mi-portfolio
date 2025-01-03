@@ -19,6 +19,7 @@
     justify-content: space-evenly;
     top: 0;
     background: var(--bg-color);
+    border-radius: 05%;
     z-index: 100;
 }
 
